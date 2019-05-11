@@ -1,0 +1,78 @@
+@charset "UTF-8";
+footer .foot_bottom {
+  width: 1200px;
+  height: 60px;
+  border-top: 1px solid #3e3a39;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "瀹嬩綋";
+  color: #333;
+}
+footer .foot_bottom .foot_bottom_tab {
+  width: 1200px;
+  height: 50px;
+  margin: 10px 0;
+}
+footer .foot_bottom .foot_bottom_tab p {
+  width: 1200px;
+  text-align: center;
+  line-height: 25px;
+  color: #3e3a39;
+  font-family: "Microsoft YaHei";
+}
+footer span {
+  display: block;
+  width: 1200px;
+  height: 20px;
+}
+
+.footer_bottom {
+  width: 980px;
+  height: 45px;
+  margin: 0 110px 25px 110px;
+  text-align: center;
+}
+.footer_bottom .logo_one {
+  display: inline-block;
+  width: 113px;
+  height: 42px;
+  margin: 0 10px;
+  background: url(../img/4.png) no-repeat scroll 0 -581px transparent;
+}
+.footer_bottom span {
+  background: url(../img/4.png) no-repeat scroll 0 -629px transparent;
+  display: inline-block;
+  height: 45px;
+  width: 156px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_three {
+  background: url(../img/4.png) no-repeat scroll 0 -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 96px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_four {
+  background: url(../img/4.png) no-repeat scroll -97px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 101px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_five {
+  background: url(../img/4.png) no-repeat scroll -202px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_six {
+  display: inline-block;
+}
+.footer_bottom .logo_six img {
+  width: 120px;
+  height: 39px;
+}
+
+/*# sourceMappingURL=footer.css.map */

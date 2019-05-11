@@ -1,0 +1,263 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.top {
+  width: 1200px;
+  height: 40px;
+  margin: 15px auto 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #7a7f89;
+}
+.top .logo {
+  display: inline-block;
+  height: 50px;
+  width: 187px;
+  background: url(http://i1.vanclimg.com/cms/20160119/logo_new.jpg) no-repeat left top;
+}
+
+section {
+  width: 1200px;
+  height: 473px;
+  margin: 50px auto 10px;
+  position: relative;
+}
+section .logo_title {
+  width: 1200px;
+  height: 25px;
+  position: relative;
+}
+section .logo_title h3 {
+  font-size: 22px;
+  color: #979797;
+  font-weight: 400;
+  text-align: left;
+  height: 25px;
+  float: right;
+  line-height: 25px;
+  margin: 0 100px 0 0;
+  width: 400px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b81e20;
+}
+section .logo_title h3 span {
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #979797;
+  line-height: 25px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+section .logo_title h3 span a {
+  color: red;
+}
+
+.login {
+  width: 415px;
+  height: 408px;
+  background-color: #fff;
+  float: right;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50px;
+  right: 95px;
+}
+.login .show {
+  width: 410px;
+  height: 362px;
+}
+
+.show .user_name, .show .password, .show .phone {
+  height: 45px;
+  width: 410px;
+  border: solid 1px #cbcbcb;
+  position: relative;
+  overflow: hidden;
+}
+
+.show .user_name input, .show .password input, .show .phone input {
+  height: 45px;
+  line-height: 45px;
+  color: #656565;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  text-indent: 10px;
+  z-index: 9;
+  border: 0 none;
+  font-size: 14px;
+}
+
+.UsernameError {
+  color: #A10000;
+}
+
+.PassworError {
+  color: #A10000;
+}
+
+.repassError {
+  color: #A10000;
+}
+
+.iphoneError {
+  color: #A10000;
+}
+
+.show #code_error {
+  position: relative;
+  top: 4px;
+}
+.show .code {
+  height: 45px;
+  width: 410px;
+  position: relative;
+}
+.show .code ._code {
+  height: 45px;
+  width: 268px;
+  border: solid 1px #cbcbcb;
+  position: relative;
+}
+.show .code ._code_ {
+  height: 45px;
+  width: 100px;
+  border: solid 1px #cbcbcb;
+  position: relative;
+  left: 35px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: #979797;
+}
+.show .bt {
+  width: 410px;
+  height: 75px;
+  position: relative;
+}
+.show .bt .vancl_registor {
+  position: absolute;
+  top: 30px;
+  display: block;
+  width: 100%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  background: #9A9A9A;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.show .bt span {
+  color: #9d9d9d;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 12px;
+  margin: 0 0 10px 0;
+}
+.show .bt span input {
+  position: relative;
+  top: 2px;
+}
+.show .bt span a {
+  color: #b42025;
+}
+
+.brand {
+  float: left;
+  margin: 18px 0 0 150px;
+}
+.brand img {
+  width: 465px;
+  height: 352px;
+}
+
+footer .foot_bottom {
+  width: 1200px;
+  height: 60px;
+  border-top: 1px solid #3e3a39;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "瀹嬩綋";
+  color: #333;
+}
+footer .foot_bottom .foot_bottom_tab {
+  width: 1200px;
+  height: 50px;
+  margin: 10px 0;
+}
+footer .foot_bottom .foot_bottom_tab p {
+  width: 1200px;
+  text-align: center;
+  line-height: 25px;
+  color: #3e3a39;
+  font-family: "Microsoft YaHei";
+}
+footer span {
+  display: block;
+  width: 1200px;
+  height: 20px;
+}
+
+.footer_bottom {
+  width: 980px;
+  height: 45px;
+  margin: 0 110px 25px 110px;
+  text-align: center;
+}
+.footer_bottom .logo_one {
+  display: inline-block;
+  width: 113px;
+  height: 42px;
+  margin: 0 10px;
+  background: url(../img/4.png) no-repeat scroll 0 -581px transparent;
+}
+.footer_bottom span {
+  background: url(../img/4.png) no-repeat scroll 0 -629px transparent;
+  display: inline-block;
+  height: 45px;
+  width: 156px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_three {
+  background: url(../img/4.png) no-repeat scroll 0 -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 96px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_four {
+  background: url(../img/4.png) no-repeat scroll -97px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 101px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_five {
+  background: url(../img/4.png) no-repeat scroll -202px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_six {
+  display: inline-block;
+}
+.footer_bottom .logo_six img {
+  width: 120px;
+  height: 39px;
+}
+
+/*# sourceMappingURL=registor.css.map */

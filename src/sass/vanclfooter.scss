@@ -1,0 +1,107 @@
+@charset "utf-8";
+.vancl_footer {
+    overflow: hidden;
+    width: 1118px;
+    height: 282px;
+    margin: 0px auto;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 25px;
+    .vancl_after {
+        margin: 33px 0 23px;
+        width: 1118px;
+        height: 138px;
+        ul {
+            li {
+                float: left;
+                width: 370px;
+                height: 138px;
+                border-right: 1px solid #e0e0e1;
+                a {
+                    .online_customer_service {
+                        margin: 15px 0 30px;
+                        width: 370px;
+                        height: 42px;
+                        text-align: center;
+                    }
+                    .online_time {
+                        margin: 0px auto;
+                        width: 156px;
+                        height: 32px;
+                        text-align: center;
+                        line-height: 32px;
+                        font-size: 14px;
+                        background: #b81c22;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//退货
+.vancl_after li:nth-child(2) {
+    .seven {
+        margin: 20px 0;
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+    }
+}
+
+//二维码
+.vancl_after li:nth-child(3) {
+    border-right: 0;
+    .code_2 {
+        width: 370px;
+        height: 104px;
+        img {
+            width: 104px;
+            height: 104px;
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+        em {
+            color: #B81C22;
+            font-style: normal;
+        }
+    }
+}
+
+//关于凡客
+.vancl_about {
+    height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+    ul {
+        li {
+            float: left;
+            padding: 0px 65px;
+            line-height: 26px;
+            border-right: 1px solid #dadadb;
+            width: auto;
+            text-align: center;
+            margin-right: 0px;
+            font-size: 12px;
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+.vancl_about li:nth-child(6) {
+    border-right: 0;
+}

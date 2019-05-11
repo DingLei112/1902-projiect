@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="凡客诚品 - 会员登录,">
+    <meta name="description" content="凡客诚品 - 会员登录">
+    <link rel="shortcut icon" href="https://ssl.vanclimg.com/common/favicon/favicon.ico" type="image/x-icon">
+    <title>凡客诚品 - 会员登录</title>
+    <link rel="stylesheet" href="../src/css/login.css">
+    <script src="../src/script/thirdplugins/jquery.js"></script>
+</head>
+
+
+<body>
+    <div class="top">
+        <a class="logo" href="#"></a>
+        <p>
+            <a href="#">帮助</a>
+        </p>
+
+    </div>
+    <section>
+        <div class="logo_title">
+            <h3>凡客 Vancl 登录
+                <span>没有账户免费<a href="registor.html">注册</a></span>
+            </h3>
+        </div>
+        <!-- 登录框 -->
+        <div class="login">
+            <div class="select">
+                <ul>
+                    <li class="">普通登录</li>
+                    <li>快速登录</li>
+                </ul>
+            </div>
+            <div class="show">
+                <div class="user_information">
+                    <div class="hint">
+                        用户名或密码错误!
+                    </div>
+                    <div class="user_name">
+                        <input id="vancl_name" name="vanclUserName" type="text" value="" class="inputtextcolor" placeholder="请输入用户名">
+                    </div>
+                    <div class="UserNameError">
+                        用户名不能为空!
+                    </div>
+                    <div class="password">
+                        <input id="vanclPassword" name="vanclPassword" type="password" class="inputtextcolor" value="" placeholder="请输入密码">
+                    </div>
+                    <div class="PasswordError">
+                        密码不能为空!
+                    </div>
+                    <div class="bt">
+                        <a class="forget" href="#">找回密码</a>
+                        <a class="vanclLogin" href="#">登 录</a>
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+                <div class="cooperation">
+                    <h2>使用合作网站账号登录凡客</h2>
+                    <p>
+                        <a href="#"></a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="brand">
+            <img src="http://i1.vanclimg.com/cms/20160902/login120412_newlogo.jpg" alt="">
+
+        </div>
+
+    </section>
+    <footer class="foot">
+
+    </footer>
+    <script>
+        $('.foot').load('index.html footer ');
+    </script>
+    <script src="../src/script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        function addCookie(key, value, day) {
+            var date = new Date(); //创建日期对象
+            date.setDate(date.getDate() + day); //过期时间：获取当前的日期+天数，设置给date
+            document.cookie = key + '=' + encodeURI(value) + ';expires=' + date; //添加cookie，设置过期时间
+        }
+        $('.vanclLogin').on('click', function() {
+            var $username = $('#vancl_name').val();
+            var $password = $('#vanclPassword').val();
+            $.ajax({
+                type: 'post',
+                url: 'http://10.31.163.13/JS1902/projectname/php/login.php',
+                data: { //将用户名和密码传输给后端
+                    name: $username,
+                    pass: $password
+                },
+                success: function(data) { //请求成功，接收后端返回的值
+                    if (!data) { //用户名或者密码错误
+                        $('.hint').show().html('用户名或者密码错误');
+                        $('#password').val('');
+                    } else { //成功,存cookie,跳转到首页
+                        addCookie('UserName', $username, 7);
+                        location.href = 'index.html';
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

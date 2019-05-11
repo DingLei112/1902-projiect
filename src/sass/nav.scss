@@ -1,0 +1,91 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$whole_width:1200px;
+$whole_height:100px;
+.whole {
+    width: $whole_width;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.header_logo_search {
+    width: $whole_width;
+    height: 46px;
+    margin-bottom: 25px;
+    li {
+        float: left;
+        width: 99px;
+        line-height: 22px;
+        padding: 0px 0px 10px;
+        text-align: center;
+        position: relative;
+        z-index: 220;
+        a {
+            line-height: 46px;
+            font-size: 16px;
+            color: #727171;
+            font-family: "Microsoft YaHei";
+        }
+        span {
+            border-right: #888 1px solid;
+            position: absolute;
+            height: 16px;
+            right: 1px;
+            top: 16px;
+        }
+    }
+}
+
+.header_logo_search .vancllogo {
+    background: url(http://i4.vanclimg.com/cms/20160923/logo18546.png) no-repeat;
+    height: 46px;
+    width: 185px;
+    span {
+        border: none;
+    }
+}
+
+//second nav
+.header_logo_search {
+    li {
+        .second_nav {
+            position: absolute;
+            top: 40px;
+            left: -3px;
+            width: 99px;
+            display: none;
+            border: 1px solid #efefef;
+            background: white;
+            div {
+                height: 40px;
+            }
+            strong {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 5px;
+                border-top: 5px solid #B81C22;
+            }
+        }
+    }
+}
+
+.header_logo_search .one:hover {
+    color: #B81C22;
+}
+
+.header_logo_search li:hover .second_nav {
+    display: block;
+}
+
+.second_nav div:hover a {
+    color: #B81C22;
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.top {
+    width: 1200px;
+    height: 40px;
+    margin: 15px auto 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #7a7f89;
+    .logo {
+        display: inline-block;
+        height: 50px;
+        width: 187px;
+        background: url(http://i1.vanclimg.com/cms/20160119/logo_new.jpg) no-repeat left top;
+    }
+    p {
+        float: right;
+        margin: 20px 5px 0;
+        font-size: 12px;
+        font-family: "Microsoft Yahei";
+        a {
+            color: #000;
+        }
+    }
+}
+
+%size {
+    font-family: "Microsoft Yahei";
+    color: #000;
+    font-size: 12px;
+}
+
+section {
+    width: 1200px;
+    height: 473px;
+    margin: 50px auto 10px;
+    // @extend %size;
+    .logo_title {
+        width: 1200px;
+        height: 25px;
+        position: relative;
+        h3 {
+            font-size: 22px;
+            color: #979797;
+            font-weight: bolder;
+            text-align: left;
+            height: 25px;
+            float: right;
+            line-height: 25px;
+            margin: 0 100px 0 0;
+            width: 400px;
+            position: relative;
+            span {
+                font-size: 14px;
+                font-weight: normal;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                color: #979797;
+                line-height: 25px;
+                text-align: left;
+                a {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 登录框
+.login {
+    width: 400px;
+    height: 408px;
+    border: 1px solid #D1D1D1;
+    background-color: #fff;
+    float: right;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    .select {
+        width: 400px;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #D1D1D1;
+        li {
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+    .show {
+        width: 400px;
+        height: 362px;
+    }
+}
+
+.select li:nth-child(1) {
+    background: #b42025;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.select li:nth-child(2) {
+    background: #f5f5f5;
+    color: #656565;
+}
+
+%information {
+    height: 45px;
+    width: 360px;
+    border: solid 1px #cbcbcb;
+    position: relative;
+    overflow: hidden;
+}
+
+%infor {
+    height: 45px;
+    line-height: 45px;
+    color: #656565;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    text-indent: 10px;
+    z-index: 9;
+    border: 0 none;
+    font-size: 14px;
+}
+
+%informat {
+    clear: both;
+    width: 220px;
+    min-height: 16px;
+    line-height: 16px;
+    color: #A10000;
+    text-indent: 30px;
+    background-color: #FFF6F7;
+    border: 1px solid #CC9998;
+    margin-left: 48px;
+    display: block;
+    visibility: hidden;
+}
+
+.show {
+    .user_information {
+        width: 415px;
+        height: 223px;
+        padding: 10px 20px 10px;
+        .hint {
+            @extend %informat;
+        }
+        .user_name {
+            @extend %information;
+            input {
+                @extend %infor;
+            }
+        }
+        .UserNameError {
+            @extend %informat;
+        }
+        .password {
+            @extend %information;
+            input {
+                @extend %infor;
+            }
+        }
+        .PasswordError {
+            @extend %informat;
+        }
+        .bt {
+            width: 360px;
+            height: 75px;
+            position: relative;
+            .forget {
+                float: right;
+                line-height: 30px;
+                color: #b42025;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+            .vanclLogin {
+                position: absolute;
+                top: 30px;
+                display: block;
+                width: 100%;
+                display: block;
+                height: 45px;
+                line-height: 45px;
+                background: #b42025;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+    }
+    .hr {
+        border-bottom: dotted 1px #909090;
+        width: 100%;
+        height: 1px;
+        overflow: hidden;
+        margin: 30px 0 0 0;
+    }
+}
+
+//sdf
+.show {
+    .cooperation {
+        width: 360px;
+        height: 77px;
+        margin: 10px auto;
+        h2 {
+            color: #a4a4a4;
+            line-height: 14px;
+            font-size: 14px;
+            font-weight: bolder;
+            margin: 10px 0;
+        }
+        p {
+            a {
+                width: 330px;
+                height: 33px;
+                display: block;
+                float: left;
+                margin: 0 10px 0 0;
+                background: url(http://i1.vanclimg.com/cms/20160118/logos.jpg) no-repeat left center;
+            }
+        }
+    }
+}
+
+.brand {
+    float: left;
+    img {
+        width: 465px;
+        height: 352px;
+    }
+    margin: 18px 0 0 150px;
+}
+
+@import "footer";

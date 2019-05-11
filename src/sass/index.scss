@@ -1,0 +1,609 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+$whole_width:1200px;
+$whole_height:100px;
+.whole {
+    width: $whole_width;
+    margin: 0 auto;
+    list-style: none;
+}
+
+
+/* top */
+
+@import "header";
+
+/* nav */
+
+//one nav
+.header_logo_search {
+    width: $whole_width;
+    height: 46px;
+    margin-bottom: 25px;
+    li {
+        float: left;
+        width: 99px;
+        line-height: 22px;
+        padding: 0px 0px 10px;
+        text-align: center;
+        position: relative;
+        z-index: 220;
+        a {
+            line-height: 46px;
+            font-size: 16px;
+            color: #727171;
+            font-family: "Microsoft YaHei";
+        }
+        span {
+            border-right: #888 1px solid;
+            position: absolute;
+            height: 16px;
+            right: 1px;
+            top: 16px;
+        }
+    }
+}
+
+.header_logo_search .vancllogo {
+    background: url(http://i4.vanclimg.com/cms/20160923/logo18546.png) no-repeat;
+    height: 46px;
+    width: 185px;
+    span {
+        border: none;
+    }
+}
+
+//second nav
+.header_logo_search {
+    li {
+        .second_nav {
+            position: absolute;
+            top: 40px;
+            left: -3px;
+            width: 99px;
+            display: none;
+            border: 1px solid #efefef;
+            background: white;
+            height: 0;
+            div {
+                height: 40px;
+            }
+            strong {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 5px;
+                border-top: 5px solid #B81C22;
+            }
+        }
+    }
+}
+
+.header_logo_search .one:hover {
+    color: #B81C22;
+}
+
+.second_nav div:hover a {
+    color: #B81C22;
+}
+
+
+/* banner */
+
+header {
+    .header_banner {
+        width: $whole_width;
+        height: 535px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+}
+
+.pic_list li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    img {
+        width: 1200px;
+        height: 535px;
+        opacity: 1;
+    }
+}
+
+ol {
+    position: absolute;
+    right: 542px;
+    bottom: 10px;
+    z-index: 10;
+    li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ccc;
+        float: left;
+        text-indent: -999em;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .active {
+        background: #a10000;
+    }
+}
+
+#btn_left,
+#btn_right {
+    font-size: 80px;
+    color: #333;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    display: none;
+}
+
+#btn_left {
+    left: 20px;
+}
+
+#btn_right {
+    right: 20px;
+}
+
+#btn_left:hover,
+#btn_right:hover {
+    color: #a10000;
+}
+
+
+/*body */
+
+.content {
+    .content_title {
+        margin-top: 20px;
+        widows: $whole_width;
+        height: 64px;
+        background: url(http://i1.vanclimg.com/cms/20190417/mm.jpg) no-repeat;
+        cursor: pointer;
+        margin-bottom: 10px;
+        h2 {
+            float: right;
+            span {
+                float: left;
+                position: relative;
+                width: 442px;
+                height: 64px;
+                margin-left: 20px;
+                line-height: 64px;
+                text-align: center;
+                line-height: 64px;
+                font-size: 18px;
+                font-style: 100;
+                color: white;
+                em {
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    float: right;
+                    margin-right: 22px;
+                    margin-top: 13px;
+                    font-style: normal;
+                    color: #a10000;
+                }
+                strong {
+                    position: absolute;
+                    left: 25px;
+                }
+            }
+        }
+    }
+    .list {
+        margin-bottom: 12px;
+        ul {
+            li {
+                float: left;
+                width: 232px;
+                height: 327px;
+                margin-right: 8px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+// 商品列表
+.list {
+    .list_title {
+        width: 232px;
+        height: 38px;
+        display: inline-block;
+        margin-top: 10px;
+        span {
+            color: #474747;
+        }
+    }
+}
+
+.list {
+    .list_price {
+        .old_list_price {
+            color: #d3d3d3;
+            width: 150px;
+            height: 19px;
+            display: inline-block;
+            text-decoration: line-through;
+        }
+        .new_list_price {
+            color: #bb2b34;
+            font-size: 16px;
+            display: inline-block;
+            width: 80px;
+            height: 21px;
+        }
+        .vip_price {
+            color: #474747;
+            height: 21px;
+            em {
+                color: #bb2b34;
+                font-weight: 700;
+                font-size: 20px;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+//T恤上新
+.content {
+    table {
+        tr {
+            td {
+                width: 1200px;
+                height: 84px;
+            }
+        }
+    }
+}
+
+//表格渲染
+.shopping_list {
+    tr {
+        float: left;
+        width: 296px;
+        td {
+            a {
+                img {
+                    height: 424px;
+                    width: 268px
+                }
+            }
+        }
+    }
+}
+
+.filler {
+    width: 1200px;
+    height: 70px;
+}
+
+// 优选推荐
+%h2 {
+    color: #9A9A9A;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.recommend {
+    width: 1200px;
+    height: 640px;
+    color: #333333;
+    font: 12px "宋体";
+    h2 {
+        @extend %h2;
+    }
+    ul {
+        li {
+            float: left;
+        }
+    }
+}
+
+%h3 {
+    height: 28px;
+    padding: 20px 12px;
+    line-height: 28px;
+    border: 1px solid #e8e7ec;
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+
+%style {
+    height: 28px;
+    padding: 20px 12px;
+    line-height: 28px;
+    border: 1px solid #e8e7ec;
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+
+%span {
+    float: right;
+    color: #B81C22;
+}
+
+.recommend {
+    ul {
+        .pic_one {
+            width: 590px;
+            height: 509px;
+            margin-right: 17px;
+            h3 {
+                @extend %style;
+                span {
+                    @extend %span;
+                }
+            }
+        }
+        .pic_two {
+            width: 290px;
+            height: 509px;
+            margin-right: 17px;
+            h3 {
+                @extend %style;
+                span {
+                    @extend %span;
+                }
+            }
+            .pic_two_1 {
+                width: 290px;
+                height: 249px;
+                margin-bottom: 16px;
+            }
+            .pic_two_2 {
+                width: 290px;
+                height: 249px;
+            }
+        }
+        .pic_three {
+            width: 286px;
+            height: 509px;
+            h3 {
+                @extend %style;
+                span {
+                    @extend %span;
+                }
+            }
+        }
+    }
+}
+
+// 下装推荐
+.pants_list {
+    width: 1200px;
+    height: 638px;
+    h2 {
+        @extend %h2;
+    }
+    ul {
+        li {
+            float: left;
+            width: 285px;
+            height: 508px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            img {
+                width: 285px;
+                height: 438px;
+            }
+            h3 {
+                @extend %style;
+                span {
+                    @extend %span;
+                }
+            }
+        }
+    }
+}
+
+.pants_list ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+// 更多精品
+.more_products {
+    width: 1200px;
+    height: 413px;
+    color: #333333;
+    font: 12px "宋体";
+    h2 {
+        @extend %h2;
+    }
+    ul {
+        li {
+            float: left;
+            width: 385px;
+            height: 275px;
+            margin: 0px 22px 28px 0px;
+        }
+    }
+}
+
+.more_products ul li:nth-child(2),
+.more_products ul li:nth-child(5) {
+    margin-right: 0;
+}
+
+//主体底部
+//客服
+.vancl_footer {
+    overflow: hidden;
+    width: 1118px;
+    height: 282px;
+    margin: 0px auto;
+    padding: 0px 40px 0px;
+    border: 1px solid #e0e0e1;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 25px;
+    .vancl_after {
+        margin: 33px 0 23px;
+        width: 1118px;
+        height: 138px;
+        ul {
+            li {
+                float: left;
+                width: 370px;
+                height: 138px;
+                border-right: 1px solid #e0e0e1;
+                a {
+                    .online_customer_service {
+                        margin: 15px 0 30px;
+                        width: 370px;
+                        height: 42px;
+                        text-align: center;
+                    }
+                    .online_time {
+                        margin: 0px auto;
+                        width: 156px;
+                        height: 32px;
+                        text-align: center;
+                        line-height: 32px;
+                        font-size: 14px;
+                        background: #b81c22;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//退货
+.vancl_after li:nth-child(2) {
+    .seven {
+        margin: 20px 0;
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+    }
+}
+
+//二维码
+.vancl_after li:nth-child(3) {
+    border-right: 0;
+    .code_2 {
+        width: 370px;
+        height: 104px;
+        img {
+            width: 104px;
+            height: 104px;
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+        em {
+            color: #B81C22;
+            font-style: normal;
+        }
+    }
+}
+
+//关于凡客
+.vancl_about {
+    height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 100%;
+    margin: 0;
+    ul {
+        li {
+            float: left;
+            padding: 0px 65px;
+            line-height: 26px;
+            border-right: 1px solid #dadadb;
+            width: auto;
+            text-align: center;
+            margin-right: 0px;
+            font-size: 12px;
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+.vancl_about li:nth-child(6) {
+    border-right: 0;
+}
+
+//底部
+@import "footer";
+// 右侧固定定位
+.online_show {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 10;
+    width: 73px;
+    height: 205px;
+    border: 1px solid #b81b22;
+    border-bottom: none;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #333;
+    ul {
+        .down_app {
+            a {
+                display: block;
+                width: 73px;
+                height: 76px;
+                background: url(../img/5.png) no-repeat -1px -1px;
+                border-bottom: 1px solid #B81C22;
+            }
+        }
+        .online_answer {
+            a {
+                display: block;
+                width: 73px;
+                height: 71px;
+                background: url(../img/5.png) no-repeat -1px -78px;
+                border-bottom: 1px solid #B81C22;
+            }
+        }
+        .back_top {
+            a {
+                display: block;
+                width: 73px;
+                height: 55px;
+                background: url(../img/5.png) no-repeat -1px -149px;
+                border-bottom: 1px solid #B81C22;
+            }
+        }
+    }
+}

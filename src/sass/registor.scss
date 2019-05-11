@@ -1,0 +1,229 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.top {
+    width: 1200px;
+    height: 40px;
+    margin: 15px auto 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #7a7f89;
+    .logo {
+        display: inline-block;
+        height: 50px;
+        width: 187px;
+        background: url(http://i1.vanclimg.com/cms/20160119/logo_new.jpg) no-repeat left top;
+    }
+}
+
+%size {
+    font-family: "Microsoft Yahei";
+    color: #000;
+    font-size: 12px;
+}
+
+section {
+    width: 1200px;
+    height: 473px;
+    margin: 50px auto 10px;
+    position: relative;
+    // @extend %size;
+    .logo_title {
+        width: 1200px;
+        height: 25px;
+        position: relative;
+        h3 {
+            font-size: 22px;
+            color: #979797;
+            font-weight: 400;
+            text-align: left;
+            height: 25px;
+            float: right;
+            line-height: 25px;
+            margin: 0 100px 0 0;
+            width: 400px;
+            position: relative;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #b81e20;
+            span {
+                font-size: 14px;
+                font-weight: normal;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                color: #979797;
+                line-height: 25px;
+                text-align: left;
+                padding-bottom: 10px;
+                a {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 登录框
+.login {
+    width: 415px;
+    height: 408px;
+    background-color: #fff;
+    float: right;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+    right: 95px;
+    .show {
+        width: 410px;
+        height: 362px;
+    }
+}
+
+%information {
+    height: 45px;
+    width: 410px;
+    border: solid 1px #cbcbcb;
+    position: relative;
+    overflow: hidden;
+}
+
+%infor {
+    height: 45px;
+    line-height: 45px;
+    color: #656565;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    text-indent: 10px;
+    z-index: 9;
+    border: 0 none;
+    font-size: 14px;
+}
+
+%informat {
+    clear: both;
+    width: 220px;
+    min-height: 16px;
+    line-height: 16px;
+    color: #A10000;
+    text-indent: 30px;
+    // background-color: #FFF6F7;
+    border: 1px solid #CC9998;
+    margin-left: 48px;
+    display: block;
+    //visibility: hidden;
+}
+
+.UsernameError {
+    color: #A10000;
+}
+
+.PassworError {
+    color: #A10000;
+}
+
+.repassError {
+    color: #A10000;
+}
+
+.iphoneError {
+    color: #A10000;
+}
+
+.show {
+    .user_name {
+        @extend %information;
+        input {
+            @extend %infor;
+        }
+    }
+    .password {
+        @extend %information;
+        input {
+            @extend %infor;
+        }
+    }
+    .phone {
+        @extend %information;
+        input {
+            @extend %infor;
+        }
+    }
+    #code_error {
+        position: relative;
+        top: 4px;
+    }
+    .code {
+        height: 45px;
+        width: 410px;
+        position: relative;
+        ._code {
+            height: 45px;
+            width: 268px;
+            border: solid 1px #cbcbcb;
+            position: relative;
+        }
+        ._code_ {
+            height: 45px;
+            width: 100px;
+            border: solid 1px #cbcbcb;
+            position: relative;
+            left: 35px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+            color: #979797;
+        }
+    }
+    .bt {
+        width: 410px;
+        height: 75px;
+        position: relative;
+        .vancl_registor {
+            position: absolute;
+            top: 30px;
+            display: block;
+            width: 100%;
+            display: block;
+            height: 45px;
+            line-height: 45px;
+            background: #9A9A9A;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+        }
+        span {
+            input {
+                position: relative;
+                top: 2px;
+            }
+            color: #9d9d9d;
+            font-size: 14px;
+            font-weight: bolder;
+            line-height: 12px;
+            margin: 0 0 10px 0;
+            a {
+                color: #b42025;
+            }
+        }
+    }
+}
+
+.brand {
+    float: left;
+    img {
+        width: 465px;
+        height: 352px;
+    }
+    margin: 18px 0 0 150px;
+}
+
+@import "footer";

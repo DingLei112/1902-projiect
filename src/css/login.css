@@ -1,0 +1,291 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.top {
+  width: 1200px;
+  height: 40px;
+  margin: 15px auto 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #7a7f89;
+}
+.top .logo {
+  display: inline-block;
+  height: 50px;
+  width: 187px;
+  background: url(http://i1.vanclimg.com/cms/20160119/logo_new.jpg) no-repeat left top;
+}
+.top p {
+  float: right;
+  margin: 20px 5px 0;
+  font-size: 12px;
+  font-family: "Microsoft Yahei";
+}
+.top p a {
+  color: #000;
+}
+
+section {
+  width: 1200px;
+  height: 473px;
+  margin: 50px auto 10px;
+}
+section .logo_title {
+  width: 1200px;
+  height: 25px;
+  position: relative;
+}
+section .logo_title h3 {
+  font-size: 22px;
+  color: #979797;
+  font-weight: bolder;
+  text-align: left;
+  height: 25px;
+  float: right;
+  line-height: 25px;
+  margin: 0 100px 0 0;
+  width: 400px;
+  position: relative;
+}
+section .logo_title h3 span {
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #979797;
+  line-height: 25px;
+  text-align: left;
+}
+section .logo_title h3 span a {
+  color: red;
+}
+
+.login {
+  width: 400px;
+  height: 408px;
+  border: 1px solid #D1D1D1;
+  background-color: #fff;
+  float: right;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+}
+.login .select {
+  width: 400px;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.login .select li {
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+.login .show {
+  width: 400px;
+  height: 362px;
+}
+
+.select li:nth-child(1) {
+  background: #b42025;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.select li:nth-child(2) {
+  background: #f5f5f5;
+  color: #656565;
+}
+
+.show .user_information .user_name, .show .user_information .password {
+  height: 45px;
+  width: 360px;
+  border: solid 1px #cbcbcb;
+  position: relative;
+  overflow: hidden;
+}
+
+.show .user_information .user_name input, .show .user_information .password input {
+  height: 45px;
+  line-height: 45px;
+  color: #656565;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  text-indent: 10px;
+  z-index: 9;
+  border: 0 none;
+  font-size: 14px;
+}
+
+.show .user_information .hint, .show .user_information .UserNameError, .show .user_information .PasswordError {
+  clear: both;
+  width: 220px;
+  min-height: 16px;
+  line-height: 16px;
+  color: #A10000;
+  text-indent: 30px;
+  background-color: #FFF6F7;
+  border: 1px solid #CC9998;
+  margin-left: 48px;
+  display: block;
+  visibility: hidden;
+}
+
+.show .user_information {
+  width: 415px;
+  height: 223px;
+  padding: 10px 20px 10px;
+}
+.show .user_information .bt {
+  width: 360px;
+  height: 75px;
+  position: relative;
+}
+.show .user_information .bt .forget {
+  float: right;
+  line-height: 30px;
+  color: #b42025;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.show .user_information .bt .vanclLogin {
+  position: absolute;
+  top: 30px;
+  display: block;
+  width: 100%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  background: #b42025;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.show .hr {
+  border-bottom: dotted 1px #909090;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  margin: 30px 0 0 0;
+}
+
+.show .cooperation {
+  width: 360px;
+  height: 77px;
+  margin: 10px auto;
+}
+.show .cooperation h2 {
+  color: #a4a4a4;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.show .cooperation p a {
+  width: 330px;
+  height: 33px;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  background: url(http://i1.vanclimg.com/cms/20160118/logos.jpg) no-repeat left center;
+}
+
+.brand {
+  float: left;
+  margin: 18px 0 0 150px;
+}
+.brand img {
+  width: 465px;
+  height: 352px;
+}
+
+footer .foot_bottom {
+  width: 1200px;
+  height: 60px;
+  border-top: 1px solid #3e3a39;
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "瀹嬩綋";
+  color: #333;
+}
+footer .foot_bottom .foot_bottom_tab {
+  width: 1200px;
+  height: 50px;
+  margin: 10px 0;
+}
+footer .foot_bottom .foot_bottom_tab p {
+  width: 1200px;
+  text-align: center;
+  line-height: 25px;
+  color: #3e3a39;
+  font-family: "Microsoft YaHei";
+}
+footer span {
+  display: block;
+  width: 1200px;
+  height: 20px;
+}
+
+.footer_bottom {
+  width: 980px;
+  height: 45px;
+  margin: 0 110px 25px 110px;
+  text-align: center;
+}
+.footer_bottom .logo_one {
+  display: inline-block;
+  width: 113px;
+  height: 42px;
+  margin: 0 10px;
+  background: url(../img/4.png) no-repeat scroll 0 -581px transparent;
+}
+.footer_bottom span {
+  background: url(../img/4.png) no-repeat scroll 0 -629px transparent;
+  display: inline-block;
+  height: 45px;
+  width: 156px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_three {
+  background: url(../img/4.png) no-repeat scroll 0 -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 96px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_four {
+  background: url(../img/4.png) no-repeat scroll -97px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 101px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_five {
+  background: url(../img/4.png) no-repeat scroll -202px -675px transparent;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  margin: 0 10px;
+}
+.footer_bottom .logo_six {
+  display: inline-block;
+}
+.footer_bottom .logo_six img {
+  width: 120px;
+  height: 39px;
+}
+
+/*# sourceMappingURL=login.css.map */
